@@ -1,0 +1,236 @@
+<header class="row marger"></header>
+
+<div id="first-slider" class="div_fixed">
+    <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel" data-interval="false">
+        <ol class="carousel-indicators">
+            <li data-target="#carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel" data-slide-to="1"></li>
+            <li data-target="#carousel" data-slide-to="2"></li>
+            <li data-target="#carousel" data-slide-to="3"></li>
+        </ol>
+
+        <!-- Carousel items -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <div class="slide-content">
+                    <video poster="../../assets/images/carousel1.jpg" webkit-playsinline id="bgvid" loop>
+          
+        </video>
+                    <div class="slide-overlay door">
+                        <div class='title'><img src="../../assets/images/logo.png" /></div>
+                        <div class="description"> test </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="slide-content">
+                    <video poster="http://cdn1.theodysseyonline.com/files/2015/07/26/635735150012627647-301203211_polo%20gif%202.gif" webkit-playsinline id="bgvid" loop>
+         
+        </video>
+                    <div class="slide-overlay door">
+                        <div class='title'> Slide 2 </div>
+                        <div class="description"> test </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="slide-content">
+                    <video poster="https://fat.gfycat.com/MediocreThinAcornweevil.gif" webkit-playsinline id="bgvid" loop>
+         
+        </video>
+                    <div class="slide-overlay door">
+                        <div class='title'>Slide 3</div>
+                        <div class="description"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="slide-content">
+                    <video poster="http://img51.laughinggif.com/pic/HTTP21lZGlhLmdpcGh5LmNvbS9tZWRpYS81VHl4bmJtTDdCNGFzL2dpcGh5LmdpZgloglog.gif" webkit-playsinline id="bgvid" loop>
+          
+        </video>
+                    <div class="slide-overlay door">
+                        <div class='title'>Slide 4</div>
+                        <div class="description"> test </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a class="carousel-control left" href="#carousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+
+        <a class="carousel-control right" href="#carousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+
+    </div>
+    <script>
+        if (!/iPhone/i.test(navigator.userAgent)) {
+            $('.active > div > video').get(0).play();
+
+            $('#carousel').bind('slide.bs.carousel', function(e) {
+                $(e.relatedTarget).find('video').get(0).play();
+            });
+
+            $('#carousel').bind('slid.bs.carousel', function(e) {
+                $('video').not('.active > div > video').each(function() {
+                    $(this).get(0).pause();
+                });
+            });
+        }
+    </script>
+</div>
+
+
+
+
+
+
+<div class="container-fluid row other_content">
+
+
+
+
+
+
+    <section>
+        <div class="container">
+            <div class="row">
+
+
+                <div class="col-md-4">
+                    <h3 class="text-center mb-5">Article 1</h3>
+                    <div class="card card-01">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/hXvgtAQUHik?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe> </div>
+                        <div class="card-body">
+                            <span class="badge-box"><i class="fa fa-check"></i></span>
+                            <h4 class="card-title">News title</h4>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at nisi ut nulla imperdiet eleifend. Praesent convallis fringilla fermentum. Duis in leo elementum, pellentesque magna vel, sagittis turpis. Maecenas tempor quis
+                                lectus nec imperdiet. Nulla tristique vitae sem ut elementum. Sed est sapien, volutpat rhoncus odio a, dapibus mollis magna. </p>
+                            <a href="#" class="btn btn-default text-uppercase">Explore</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <h3 class="text-center mb-5">Article 2</h3>
+                    <div class="card card-01">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/hXvgtAQUHik?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe> </div>
+                        <div class="card-body">
+                            <span class="badge-box"><i class="fa fa-check"></i></span>
+                            <h4 class="card-title">News title</h4>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at nisi ut nulla imperdiet eleifend. Praesent convallis fringilla fermentum. Duis in leo elementum, pellentesque magna vel, sagittis turpis. Maecenas tempor quis
+                                lectus nec imperdiet. Nulla tristique vitae sem ut elementum. Sed est sapien, volutpat rhoncus odio a, dapibus mollis magna. </p>
+                            <a href="#" class="btn btn-default text-uppercase">Explore</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <h3 class="text-center mb-5">Article 3</h3>
+                    <div class="card card-01">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/hXvgtAQUHik?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe> </div>
+                        <div class="card-body">
+                            <span class="badge-box"><i class="fa fa-check"></i></span>
+                            <h4 class="card-title">News title</h4>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at nisi ut nulla imperdiet eleifend. Praesent convallis fringilla fermentum. Duis in leo elementum, pellentesque magna vel, sagittis turpis. Maecenas tempor quis
+                                lectus nec imperdiet. Nulla tristique vitae sem ut elementum. Sed est sapien, volutpat rhoncus odio a, dapibus mollis magna. </p>
+                            <a href="#" class="btn btn-default text-uppercase">Explore</a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <article class="dedicace">
+        <h3>Mikafric fournit les plus grandes firmes Marocaines :</h3>
+    </article>
+
+
+    <div class="container-fluid firms">
+        <div class="container">
+            <div class="col-md-3 col-ms-12">
+                <img class="firm" src="assets/images/lesieur.jpg" alt="lesieur">
+            </div>
+            <div class="col-md-3 col-ms-12">
+                <img class="firm" src="assets/images/colorado.png" alt="colorado">
+            </div>
+            <div class="col-md-3 col-ms-12">
+                <img class="firm" src="assets/images/atlas.jpeg" alt="atlas">
+            </div>
+            <div class="col-md-3 col-ms-12">
+                <img class="firm" src="assets/images/lapraire.jpg" alt="laprairie">
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="container otherArticles">
+        <article class="col-md-6 col-ms-12">
+            <h3>Article</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras maximus euismod urna, vel eleifend lorem lacinia a. Donec in velit pharetra, ultricies orci at, euismod justo. Vestibulum sollicitudin ligula eu porta maximus. Nulla feugiat turpis
+                a ipsum interdum, eu eleifend urna ultricies. Cras non tellus felis. Nunc sed scelerisque libero, quis suscipit urna. Vivamus vulputate, mi lobortis vulputate aliquam, purus turpis pulvinar augue, ut ullamcorper diam felis et massa. Quisque
+                molestie pulvinar libero sed dapibus. Maecenas varius tristique erat ut varius. Vivamus venenatis elementum libero, et gravida nulla feugiat non. Etiam euismod mauris erat, rutrum faucibus lectus tempor at. Nulla ac tempus ex. Etiam consectetur
+                eu elit ut pretium. Phasellus blandit turpis sem, sit amet auctor lectus posuere a. Donec et libero quis ipsum fermentum pulvinar eu vitae nisl. Aenean eget volutpat risus. Etiam in condimentum nibh, id porttitor magna. Vestibulum mollis
+                volutpat lacinia. Praesent at lacinia lorem. Donec lorem sapien, cursus eget nulla eu, convallis tincidunt leo. Duis porttitor lacus tortor, id commodo lacus placerat sit amet. Praesent et metus turpis. Maecenas lobortis molestie commodo.
+                Nunc egestas enim eu commodo cursus. Quisque sed egestas ipsum. Nunc placerat felis ut sem lobortis, sed volutpat diam malesuada. Phasellus tristique dolor ut aliquet vestibulum. Donec pulvinar rhoncus mollis. Nam eros enim, venenatis
+                ac mattis suscipit, euismod cursus est. Nulla sagittis in tortor sit amet pulvinar. Duis ac nulla justo. Mauris non nunc ligula. Praesent molestie erat sed massa elementum, eu rutrum purus venenatis. Phasellus semper nulla ut congue semper.
+            </p>
+            <hr class="separator" />
+        </article>
+        <article class="col-md-6 col-ms-12">
+            <h3>Article</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras maximus euismod urna, vel eleifend lorem lacinia a. Donec in velit pharetra, ultricies orci at, euismod justo. Vestibulum sollicitudin ligula eu porta maximus. Nulla feugiat turpis
+                a ipsum interdum, eu eleifend urna ultricies. Cras non tellus felis. Nunc sed scelerisque libero, quis suscipit urna. Vivamus vulputate, mi lobortis vulputate aliquam, purus turpis pulvinar augue, ut ullamcorper diam felis et massa. Quisque
+                molestie pulvinar libero sed dapibus. Maecenas varius tristique erat ut varius. Vivamus venenatis elementum libero, et gravida nulla feugiat non. Etiam euismod mauris erat, rutrum faucibus lectus tempor at. Nulla ac tempus ex. Etiam consectetur
+                eu elit ut pretium. Phasellus blandit turpis sem, sit amet auctor lectus posuere a. Donec et libero quis ipsum fermentum pulvinar eu vitae nisl. Aenean eget volutpat risus. Etiam in condimentum nibh, id porttitor magna. Vestibulum mollis
+                volutpat lacinia. Praesent at lacinia lorem. Donec lorem sapien, cursus eget nulla eu, convallis tincidunt leo. Duis porttitor lacus tortor, id commodo lacus placerat sit amet. Praesent et metus turpis. Maecenas lobortis molestie commodo.
+                Nunc egestas enim eu commodo cursus. Quisque sed egestas ipsum. Nunc placerat felis ut sem lobortis, sed volutpat diam malesuada. Phasellus tristique dolor ut aliquet vestibulum. Donec pulvinar rhoncus mollis. Nam eros enim, venenatis
+                ac mattis suscipit, euismod cursus est. Nulla sagittis in tortor sit amet pulvinar. Duis ac nulla justo. Mauris non nunc ligula. Praesent molestie erat sed massa elementum, eu rutrum purus venenatis. Phasellus semper nulla ut congue semper.
+            </p>
+            <hr class="separator" />
+        </article>
+        <article class="col-md-6 col-ms-12">
+            <h3>Article</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras maximus euismod urna, vel eleifend lorem lacinia a. Donec in velit pharetra, ultricies orci at, euismod justo. Vestibulum sollicitudin ligula eu porta maximus. Nulla feugiat turpis
+                a ipsum interdum, eu eleifend urna ultricies. Cras non tellus felis. Nunc sed scelerisque libero, quis suscipit urna. Vivamus vulputate, mi lobortis vulputate aliquam, purus turpis pulvinar augue, ut ullamcorper diam felis et massa. Quisque
+                molestie pulvinar libero sed dapibus. Maecenas varius tristique erat ut varius. Vivamus venenatis elementum libero, et gravida nulla feugiat non. Etiam euismod mauris erat, rutrum faucibus lectus tempor at. Nulla ac tempus ex. Etiam consectetur
+                eu elit ut pretium. Phasellus blandit turpis sem, sit amet auctor lectus posuere a. Donec et libero quis ipsum fermentum pulvinar eu vitae nisl. Aenean eget volutpat risus. Etiam in condimentum nibh, id porttitor magna. Vestibulum mollis
+                volutpat lacinia. Praesent at lacinia lorem. Donec lorem sapien, cursus eget nulla eu, convallis tincidunt leo. Duis porttitor lacus tortor, id commodo lacus placerat sit amet. Praesent et metus turpis. Maecenas lobortis molestie commodo.
+                Nunc egestas enim eu commodo cursus. Quisque sed egestas ipsum. Nunc placerat felis ut sem lobortis, sed volutpat diam malesuada. Phasellus tristique dolor ut aliquet vestibulum. Donec pulvinar rhoncus mollis. Nam eros enim, venenatis
+                ac mattis suscipit, euismod cursus est. Nulla sagittis in tortor sit amet pulvinar. Duis ac nulla justo. Mauris non nunc ligula. Praesent molestie erat sed massa elementum, eu rutrum purus venenatis. Phasellus semper nulla ut congue semper.
+            </p>
+            <hr class="separator" />
+        </article>
+        <article class="col-md-6 col-ms-12">
+            <h3>Article</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras maximus euismod urna, vel eleifend lorem lacinia a. Donec in velit pharetra, ultricies orci at, euismod justo. Vestibulum sollicitudin ligula eu porta maximus. Nulla feugiat turpis
+                a ipsum interdum, eu eleifend urna ultricies. Cras non tellus felis. Nunc sed scelerisque libero, quis suscipit urna. Vivamus vulputate, mi lobortis vulputate aliquam, purus turpis pulvinar augue, ut ullamcorper diam felis et massa. Quisque
+                molestie pulvinar libero sed dapibus. Maecenas varius tristique erat ut varius. Vivamus venenatis elementum libero, et gravida nulla feugiat non. Etiam euismod mauris erat, rutrum faucibus lectus tempor at. Nulla ac tempus ex. Etiam consectetur
+                eu elit ut pretium. Phasellus blandit turpis sem, sit amet auctor lectus posuere a. Donec et libero quis ipsum fermentum pulvinar eu vitae nisl. Aenean eget volutpat risus. Etiam in condimentum nibh, id porttitor magna. Vestibulum mollis
+                volutpat lacinia. Praesent at lacinia lorem. Donec lorem sapien, cursus eget nulla eu, convallis tincidunt leo. Duis porttitor lacus tortor, id commodo lacus placerat sit amet. Praesent et metus turpis. Maecenas lobortis molestie commodo.
+                Nunc egestas enim eu commodo cursus. Quisque sed egestas ipsum. Nunc placerat felis ut sem lobortis, sed volutpat diam malesuada. Phasellus tristique dolor ut aliquet vestibulum. Donec pulvinar rhoncus mollis. Nam eros enim, venenatis
+                ac mattis suscipit, euismod cursus est. Nulla sagittis in tortor sit amet pulvinar. Duis ac nulla justo. Mauris non nunc ligula. Praesent molestie erat sed massa elementum, eu rutrum purus venenatis. Phasellus semper nulla ut congue semper.
+            </p>
+            <hr class="separator" />
+        </article>
+    </div>
+
+</div>
