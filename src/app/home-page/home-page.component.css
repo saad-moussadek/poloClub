@@ -231,20 +231,22 @@
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
-    background-color: #97BEC2;
+    background-color: #584E40;
     font-family: 'Oswald', sans-serif;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .dedicace h3 {
+    padding-top: 30px;
     font-size: 32px;
 }
 
 .firms {
     min-height: 200px;
     padding: 1%;
-    background-color: #C7D4D9;
+    background-color: #BEBBAA;
     position: center;
+    margin-bottom: 40px;
 }
 
 .firm {
